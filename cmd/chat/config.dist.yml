@@ -1,0 +1,23 @@
+env: dev
+
+app_project: matched
+app_family: task
+app_name: chat
+
+db:
+  default:
+    driver: mysql
+    max_idle_connections: 20
+    max_open_connections: 20
+    connection_max_lifetime: 60s
+    parse_time: true
+    uri:
+      host: 127.0.0.1
+      port: 3306
+      user: mcoins
+      password: mcoins
+      database: chat
+    migrations:
+      enabled: false
+      table_prefixed: false
+      path: file://../../build/migrations/chat
