@@ -37,7 +37,6 @@ func (a *ApiServerTestSuite) SetupSuite() []suite.Option {
 	return []suite.Option{
 		suite.WithLogLevel("info"),
 		suite.WithConfigFile("../../cmd/chat/config.dist.yml"),
-		// suite.WithConfigFile("./config.test.yml"),
 		suite.WithFixtures(fixtureSets),
 		suite.WithSharedEnvironment(),
 	}
